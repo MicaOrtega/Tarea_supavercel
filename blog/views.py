@@ -3,7 +3,6 @@ from django.shortcuts import redirect
 from .models import Article
 from .forms import ArticleForm
 
-
 def index(request):
     articles = Article.objects.all()
     params = {
