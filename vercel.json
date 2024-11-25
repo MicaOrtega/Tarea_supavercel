@@ -1,7 +1,7 @@
 {
 "builds": [
     {
-    "src": "python_vercel_task/python_vercel_task/wsgi.py",
+    "src": "python_vercel_task/wsgi.py",
     "use": "@vercel/python",
     "config": {
         "maxLambdaSize": "15mb",
@@ -10,7 +10,7 @@
     }
 ],
 "routes": [
-    { "src": "/blog/(.*)", "dest": "python_vercel_task/python_vercel_task/wsgi.py" },
-    { "src": "/(.*)", "dest": "python_vercel_task/python_vercel_task/wsgi.py" }
+    { "src": "/blog/(.*)", "dest": "python_vercel_task/wsgi.py" },
+    { "src": "/(.*)", "dest": "python_vercel_task/wsgi.py" }
 ]
 }
