@@ -10,9 +10,7 @@
     }
 ],
 "routes": [
-    {
-    "src": "/(.*)",
-    "dest": "python_vercel_task/python_vercel_task/wsgi.py"
-    }
+    { "src": "/blog/(.*)", "dest": "python_vercel_task/wsgi.py" },
+    { "src": "/(.*)", "dest": "python_vercel_task/wsgi.py" }
 ]
 }
